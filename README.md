@@ -18,6 +18,8 @@ docker run -d \
 
 `--jd-device` is optional if only one device is present
 
+### JDownloader is expected to be running and connected to my.jdownloader.org - the script will otherwise fail to launch.
+
 ## Credits
 
 * [mmarquezs](https://github.com/mmarquezs/)
