@@ -11,4 +11,4 @@ COPY root/ /
 
 # volumes and ports
 VOLUME /config
-EXPOSE 9090
+EXPOSE 8080
