@@ -16,7 +16,7 @@ docker run -d \
   rix1337/docker-myjd-api
   ```
 
-`--jd-device` is optional
+`--jd-device` is optional if only one device is present
 
 ## Credits
 
