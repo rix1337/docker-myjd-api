@@ -11,11 +11,16 @@ docker run -d \
   --name="MyJD-API" \
   -p port:8080 \
   -v /path/to/config/:/config:rw \
-  -e PARAMETER=[--jd-user=<USERNAME> --jd-pass=<PASSWORD> --jd-device=DEVICENAME] \
+  -e USER=USERNAME \ 
+  -e PASS=PASSWORD \
+  -e DEVICE=DEVICENAME \
   rix1337/docker-myjd-api
   ```
-
-`--jd-device` is optional if only one device is present
+  
+# Optional Parameters
+ - `-e USER` (after first run, if unchanged)
+ - `-e PASS` (after first run, if unchanged)
+ - `-e DEVICE` (always, is optional if only one device is present in MyJD, otherwise after first run, if unchanged)
 
 ### JDownloader is expected to be running and connected to my.jdownloader.org - the script will otherwise fail to launch.
 
