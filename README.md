@@ -22,7 +22,9 @@ docker run -d \
  - `-e PASS` (after first run, if unchanged)
  - `-e DEVICE` (always, is optional if only one device is present in MyJD, otherwise after first run, if unchanged)
 
-### JDownloader is expected to be running and connected to my.jdownloader.org - the script will otherwise fail to launch.
+#### JDownloader is expected to be running and connected to my.jdownloader.org - the script will otherwise fail to launch.
+
+#### Wrap complex passwords in quotes `"`
 
 ## Credits
 
