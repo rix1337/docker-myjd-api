@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/myjd-api.svg)](https://badge.fury.io/py/myjd-api)
 [![Github Sponsorship](https://img.shields.io/badge/support-me-red.svg)](https://github.com/users/rix1337/sponsorship)
 
-This is a standalone version of [RSScrawler](https://github.com/rix1337/RSScrawler)'s MyJDownloader API for use with projects like [Organizr](https://github.com/causefx/Organizr).
+This is a standalone version of [FeedCrawler](https://github.com/rix1337/FeedCrawler)'s MyJDownloader API for use with projects like [Organizr](https://github.com/causefx/Organizr).
 
 # Run
 ```
