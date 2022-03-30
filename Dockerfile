@@ -11,8 +11,9 @@ COPY root/ /
 VOLUME /config
 EXPOSE 8080
 
-# invalidate build cache on repo commit
-ADD "https://api.github.com/repos/rix1337/MyJD-API/commits?per_page=1" latest_commit
-
 # Install MyJD-API
-RUN pip3 install myjd-api --no-cache-dir
+RUN pip3 install --upgrade pip \
+  && pip3 install myjd-api --no-cache-dir
+
+# Remove build tools
+RUN apk del build-base
