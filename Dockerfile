@@ -2,7 +2,7 @@ FROM ghcr.io/linuxserver/baseimage-alpine:3.15
 MAINTAINER rix1337
 
 # build tools
-RUN apk add --no-cache build-base python3-dev py3-pip
+RUN apk add --no-cache gcc build-base libc-dev python3-dev py3-pip
 
 # add local files
 COPY root/ /
@@ -16,4 +16,4 @@ RUN pip3 install --upgrade pip \
   && pip3 install myjd-api --no-cache-dir
 
 # Remove build tools
-RUN apk del build-base
+RUN apk del gcc build-base libc-dev
