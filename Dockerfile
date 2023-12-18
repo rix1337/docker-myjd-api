@@ -15,3 +15,4 @@ COPY root/ /
 # volumes and ports
 VOLUME /config
 EXPOSE 8080
+ENV PYTHONUNBUFFERED=1
